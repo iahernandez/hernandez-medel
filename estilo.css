@@ -5,40 +5,38 @@
 
 body{
 	background:rgba(255,255,255,1);
-	color:rgba(25,25,25,1);
-  font-family: 'Open Sans Condensed', sans-serif;
-	font-weight:300;
+	color:rgba(0,0,0,1);
+	font-family: 'Cormorant Garamond', serif;
+	font-weight:400;
 }
 
-h1, h2, h3, h4{
-	font-family: 'Montserrat', sans-serif;
-	font-weight:700;
+h1, h2, h3, h4, h7{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight:400;
 }
 
 h1{
 	letter-spacing:0.1em;
-	color:rgba(255,255,255,0.9);
-	text-shadow: 1px 1px 0 #999;
+	color:rgba(205,46,58,1);
 	text-align:center;
 }
 
 h2{
 	letter-spacing:0.02em;
-	color:rgba(255,255,255,0.6);
+	color:rgba(205,46,58,0.8);
 	padding:0.2em 0;
-	text-shadow: 1px 1px 0 #999;
 	text-align:center;
 }
 
 h3{
 	letter-spacing:0.2em;
-	color:rgba(0,0,0,.75);
+	color:rgba(25,25,25,.75);
 	padding:2em 0 0.6em 0;
 	text-shadow: 1px 1px 0 #ccc;
 	text-align:center;
 }
 
-h4, h5, h6{
+h4, h5, h6, h7{
 	font-weight:left;
 	font-weight:600;
 }
@@ -81,28 +79,46 @@ video{
 	}
 
 .dupla a{
-	color:rgba(255,0,0,0.75);
+	color:rgba(205,46,58,1);
 	text-decoration:none;
 	font-weight:700;
 }
 
 .dupla a:hover{
-	color:rgba(255,0,0,1);
+	color:rgba(0,71,160,1);
+	text-decoration:underline;
+}
+
+.dupla b{
+	color:rgba(0,71,160,1);
+	text-decoration:none;
+	font-weight:700;
+}
+
+.dupla b:hover{
+	color:rgba(205,46,58,1);
 	text-decoration:underline;
 }
 
 .primera{
 	min-height:300px;
 	text-align:left;
-	background-color:rgba(241,230,210,1);
+	background-color:rgba(255,255,255,1);
 	background-image:url('media/dupla-01.jpg');
 	background-position:top right;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
-.primera h4{padding: 2% 40% 1% 2%;}
 
-.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+.primera h4{
+  color: rgba(205,46,58,1);
+	padding: 2% 40% 1% 2%;
+}
+
+.primera h5{
+  color: rgba(205,46,58,1);
+	padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;
+}
 
 .primera p{padding: 2% 40% 2% 2%;}
 
@@ -111,16 +127,21 @@ video{
 .segunda{
 	min-height:300px;
 	text-align:right;
-	background-color:rgba(231,240,239,1);
+	background-color:rgba(255,255,255,1);
 	background-image:url('media/dupla-02.jpg');
 	background-position:top left;
 	background-repeat:no-repeat;
 	background-size:auto 100%;
 }
 
-.segunda h4{padding: 2% 2% 1% 40%;}
-
-.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;}
+.segunda h4{
+  color: rgba(0,71,160,1);
+	padding: 2% 2% 1% 40%;
+}
+.segunda h5{
+  color: rgba(0,71,160,1);
+	padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;
+}
 
 .segunda p{padding: 2% 2% 2% 40%;}
 
@@ -134,7 +155,6 @@ video{
 #portafolio{
 	width:100%;
 	padding-bottom:1%;
-	background:linear-gradient(to bottom right, #F2E6D4, #E7F0EF);
 }
 
 .item {
@@ -143,6 +163,7 @@ video{
 	color:#333;
 	background:white;
 	box-shadow:0 0 5px rgba(0,0,0,.1);
+	filter:drop-shadow(10px 10px 10px rgba(0,0,0,0.7));
 }
 
 .item:hover{
@@ -157,16 +178,23 @@ video{
 	width:100%;
 	height:auto;
 	margin-bottom:-4px;
-	filter: grayscale(1);
+	filter:brightness(0.3);
 }
 
 .item:hover figure img{
-	transform:scale(1.25);
-	filter: grayscale(0);
+	filter:brightness(1);
 	transition:all ease-out 0.5s;
 }
 
 .item h4{
+	color:rgba(0,71,160,1);
+	font-size:1em;
+	letter-spacing:0.025em;
+	margin:5% 5% 3% 5%;
+}
+
+.item h7{
+  color:rgba(205,46,58,1);
 	font-size:1em;
 	letter-spacing:0.025em;
 	margin:5% 5% 3% 5%;
@@ -180,23 +208,22 @@ video{
 
 footer{
 	width:100%;
-	padding:3em 0 1em 0;
+	padding:2em 0 1em 0;
 	text-align:center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Cormorant Garamond', serif;
 	font-weight:700;
 }
 
 footer p{
-	text-transform:uppercase;
 	letter-spacing:0.1em;
-	font-size:0.9em;
-	}
+	font-size:1em;
+}
 
 footer hr{
 	border:2px solid #000;
 	width:10%;
 	margin:2em auto 0 auto;
-	}
+}
 
 @media screen and (orientation: portrait){
 
@@ -208,7 +235,7 @@ footer hr{
 	.item{
 		width:48%;
 		margin:1%;
-		background:#F0E5D3;
+		background:#FFFFFF;
 		color:#333;
 	}
 
